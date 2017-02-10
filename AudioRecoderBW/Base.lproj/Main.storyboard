@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vxL-7W-F89">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio Recoder-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioRecoderBW" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Waveform Display B:W" translatesAutoresizingMaskIntoConstraints="NO" id="LMq-5Z-EQH">
+                                <rect key="frame" x="0.0" y="188" width="375" height="215"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="00:01.12" translatesAutoresizingMaskIntoConstraints="NO" id="PMb-ef-aBm">
+                                <rect key="frame" x="112" y="144" width="150" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="LOM-sU-V40"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="6id-df-hyr">
+                                <rect key="frame" x="122" y="482" width="130" height="25"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loK-Xc-jTT">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="85W-e8-LtF"/>
+                                            <constraint firstAttribute="height" constant="25" id="jsI-Vh-FIi"/>
+                                        </constraints>
+                                        <state key="normal" image="Pause"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr9-YU-yEE">
+                                        <rect key="frame" x="105" y="0.0" width="25" height="25"/>
+                                        <state key="normal" image="Stop"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PMb-ef-aBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Uw-JH-OVU"/>
+                            <constraint firstItem="6id-df-hyr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="398-To-QRn"/>
+                            <constraint firstItem="6id-df-hyr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="161" id="6Je-8K-Xpa"/>
+                            <constraint firstItem="PMb-ef-aBm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="96" id="9ws-es-2bZ"/>
+                            <constraint firstItem="LMq-5Z-EQH" firstAttribute="top" secondItem="PMb-ef-aBm" secondAttribute="bottom" constant="8" id="S97-VH-IAG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LMq-5Z-EQH" secondAttribute="bottom" constant="264" id="XVX-Vu-xC7"/>
+                            <constraint firstItem="LMq-5Z-EQH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fQF-3Y-uMi"/>
+                            <constraint firstAttribute="trailing" secondItem="LMq-5Z-EQH" secondAttribute="trailing" id="hOM-py-ssP"/>
+                            <constraint firstItem="PMb-ef-aBm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="tcP-eX-wXT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Audio Recoder" id="hLD-fh-eIn">
+                        <barButtonItem key="leftBarButtonItem" image="menudot" id="uyJ-DT-1bD"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="rBl-2v-wS0"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9LL-kC-7Ao">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vxL-7W-F89" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8s3-HK-fjB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tk7-gW-tsb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdi-d9-m4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="776.76161919040487"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="00:01.12" width="288" height="59"/>
+        <image name="Pause" width="28" height="36"/>
+        <image name="Stop" width="36" height="36"/>
+        <image name="Waveform Display B:W" width="678" height="459"/>
+        <image name="menudot" width="37" height="28"/>
+    </resources>
+</document>
